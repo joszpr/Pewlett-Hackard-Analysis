@@ -44,3 +44,31 @@ ORDER BY COUNT(u.title) DESC
 
 	-- Verify table is correct
 SELECT * FROM retiring_titles
+
+-- CHALLENGE 2
+	--	Call tables for visualization 
+SELECT * FROM employees
+SELECT * FROM dept_emp
+SELECT * FROM titles
+
+-- 1. Create a Mentorship Eligibility table that holds the employees
+	-- who are eligible to participate in a mentorship program.
+SELECT DISTINCT ON(e.emp_no) e.emp_no,
+		e.first_name,
+		e.last_name,
+		e.birth_date,
+		d.from_date,
+		d.to_date,
+		t.title
+-- INTO mentorship_eligibilty
+FROM employees AS e
+JOIN dept_emp AS d
+	ON e.emp_no = d.emp_no
+JOIN titles AS t
+	ON e.emp_no = t.emp_no
+WHERE (d.to_date = ('9999-01-01')) 
+	AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31') 
+ORDER BY e.emp_no ASC, t.to_date DESC
+
+	-- Verify table is correct
+SELECT * FROM mentorship_eligibilty
