@@ -4,7 +4,7 @@
 
 ##### **Background** ##### 
 
-Analysis performed for Pewlett Hackard with the objective of reviewing their employees expected retirement date and current positions in order to create initiatives to train new personal to replace the next generational retirement wave. The analysis was prompted by a concern that there will be a significant number of employees who will retire from important positions in a close timeline and measures need to be taken in order to prevent interruptions on the company operations.  
+Analysis performed for Pewlett Hackard with the objective of reviewing their employees expected retirement date and current positions in order to create initiatives to train new personal to replace the next generational retirement wave. The analysis was prompted by a concern that there will be a significant number of employees who will retire from important positions in a close timeline and measures need to be taken in order to prevent interruptions in the company operations.  
 
 ##### **Methodology** #####
 
