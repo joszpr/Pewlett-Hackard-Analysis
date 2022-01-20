@@ -2,7 +2,7 @@
 SELECT * FROM employees
 SELECT * FROM titles
 
--- Create retiring_by_title table by merging Employees and Titles tables
+-- Create retiring_by_title table by merging employees and titles tables
 SELECT e.emp_no, 
 		e.first_name, 
 		e.last_name,
