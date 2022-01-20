@@ -32,7 +32,7 @@ ORDER BY r.emp_no ASC, r.to_date DESC;
 	-- Verify table
 SELECT * FROM unique_titles
 
-
+-- Export unique_titles as csv
 -- Retrieve number of employees by most recent job title who are about to retire
 -- and create a retiring_titles table
 SELECT COUNT(u.title), u.title
